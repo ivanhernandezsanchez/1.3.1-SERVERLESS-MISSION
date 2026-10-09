@@ -11,16 +11,16 @@ https://templatemo.com/tm-588-ebook-landing
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #E76F51;
-  --secondary-color:              #E9C46A;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #F4A261;
-  --custom-btn-bg-hover-color:    #E76F51;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --link-hover-color:             #E76F51;
+  --primary-color:                #f06445;
+  --secondary-color:              #c8ed55;
+  --section-bg-color:             #edf2ec;
+  --custom-btn-bg-color:          #c8ed55;
+  --custom-btn-bg-hover-color:    #f06445;
+  --dark-color:                   #172421;
+  --p-color:                      #53615b;
+  --link-hover-color:             #f06445;
 
-  --body-font-family:             'Unbounded', sans-serif;
+  --body-font-family:             'Space Grotesk', sans-serif;
 
   --h1-font-size:                 42px;
   --h2-font-size:                 36px;
@@ -33,9 +33,9 @@ https://templatemo.com/tm-588-ebook-landing
   --btn-font-size:                14px;
   --copyright-font-size:          14px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large:          8px;
+  --border-radius-medium:         8px;
+  --border-radius-small:          4px;
 
   --font-weight-light:            300;
   --font-weight-normal:           400;
@@ -93,7 +93,7 @@ h5 {
 }
 
 h6 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: var(--h6-font-size);
 }
 
@@ -1048,6 +1048,128 @@ strong {
   .btn-naira .btn-icon {
     font-size: 12px;
     padding: 5px 15px;
+  }
+}
+
+body {
+  background-color: #f7f8f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--dark-color);
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.hero-section {
+  min-height: 650px;
+  padding: 150px 0 90px;
+  background-color: #172421;
+  background-image: repeating-linear-gradient(0deg, transparent 0 47px, rgba(200, 237, 85, 0.07) 48px),
+    repeating-linear-gradient(90deg, transparent 0 47px, rgba(200, 237, 85, 0.07) 48px);
+}
+
+.hero-section::after {
+  background-color: rgba(23, 36, 33, 0.24);
+}
+
+.hero-section .row {
+  top: 0;
+}
+
+.hero-section h6 {
+  color: var(--secondary-color);
+}
+
+.hero-image {
+  bottom: 0;
+  border: 1px solid rgba(200, 237, 85, 0.45);
+  border-radius: 8px;
+}
+
+.featured-section {
+  background-color: var(--secondary-color);
+}
+
+.featured-section p {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.custom-btn {
+  border-radius: 4px;
+  color: var(--dark-color);
+}
+
+.custom-btn:hover {
+  color: var(--white-color);
+}
+
+.contact-section {
+  background: var(--dark-color);
+}
+
+.contact-section::before {
+  border-color: var(--section-bg-color) transparent transparent;
+}
+
+.contact-section h2,
+.contact-section h6,
+.contact-section .site-footer-title {
+  color: var(--white-color);
+}
+
+.ebook-download-form {
+  border: 1px solid #dce4da;
+  border-top: 4px solid var(--secondary-color);
+  border-radius: 8px;
+}
+
+.custom-form .form-control {
+  border: 1px solid #cbd5cc;
+  border-radius: 4px;
+}
+
+.custom-form .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-radius: 4px;
+}
+
+.custom-form button[type="submit"] {
+  border-radius: 4px;
+  color: var(--dark-color);
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: #f7f8f4;
+  }
+
+  .navbar-toggler .navbar-toggler-icon,
+  .navbar-toggler .navbar-toggler-icon::before,
+  .navbar-toggler .navbar-toggler-icon::after {
+    background: var(--dark-color);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: transparent;
+  }
+
+  .navbar .custom-border-btn {
+    border-color: var(--primary-color);
+    color: var(--dark-color);
   }
 }
 
