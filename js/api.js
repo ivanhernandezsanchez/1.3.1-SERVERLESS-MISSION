@@ -1,4 +1,4 @@
-const API_URL = 'https://uv09pc2of5.execute-api.us-east-1.amazonaws.com/dev/contact';
+const API_URL = 'https://uv09pc2of5.execute-api.us-east-1.amazonaws.com/dev';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.ebook-download-form');
